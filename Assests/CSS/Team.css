@@ -4,7 +4,7 @@ body{
     display: flex;
     justify-content:center;
     min-height: 100vh;
-    background: #000 !important;
+    background: #1c1c1c !important;
     font-family: sans-serif;
     overflow-x: hidden;
   }
@@ -27,6 +27,7 @@ body{
   position: fixed !important;
   height: 12vh;
   width: 100%;
+  left: 0px;
   background-color: #000;
   position: relative;
 }
@@ -163,11 +164,12 @@ body{
   flex-direction:row;
 }
 .tedx-image{
+  z-index: -1;
   position: absolute;
   left:0%;
   padding-left: 5vw;
   padding-top: 0vh;
-  width:30rem;
+  width:35rem;
 }
 .navbar-nav{
   padding-top: 2vh;
@@ -242,7 +244,11 @@ body{
   
   .card:hover .imgBx
   {
-    bottom: 80px;
+    bottom: 90px;
+  }
+  .card:hover .details{
+    display: flex;
+    flex-direction: column;
   }
 
   .card .imgBx img{
@@ -255,12 +261,13 @@ body{
   }
 
   .card .details{
-      position: absolute;
-      left: 10px;
-      right: 10px;
-      bottom: 0.2vw;
-      height: 60px;
-      text-align: center;
+    display: none;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 1.5vw;
+    height: 60px;
+    text-align: center;
   }
 
   .card .details h2{
@@ -278,7 +285,94 @@ body{
   color: #f38695;
   display: block;
   margin-top: 5px;
-   } 
+   }
+
+  /* icons css */
+  .contact-icons{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+  .contact-icons img{
+  height: 3rem;
+  width: 3rem;
+  } 
+  
+  /* icons css complete */
+  /* footer CSS */
+  .footer-class{
+    width:100vw;
+  }
+  footer {
+    bottom: 0px;
+    background: black;
+    padding: 30px 0;
+    /* color: #111; */
+    font-size: 16px;
+  }
+  p{
+    font-size:2rem;
+    color: white;
+  }
+  footer h4 {
+    font-size:2.2rem !important;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer li {
+    font-size:1.6rem !important;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  footer a {
+    font-size:1.8rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #f4511e;
+    text-decoration: underline;
+  }
+  
+  .footer-container {
+    max-width: 1170px !important;
+    margin: 0 auto !important;
+  }
+  
+  .footer-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+  
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 !important;
+    margin-bottom: 30px;
+    margin: 0 5%;
+  }
+  .copyright{
+    background-color: #000;
+    text-align: center;
+    color:#fff;
+    padding-top: 2vw;
+    font-size: 1.8rem;
+  }
+
+/* footer css complete */
 @media screen and (max-width:991px){
   .box{
     flex-wrap: wrap;
@@ -301,6 +395,13 @@ body{
     font-size:4rem;
     margin-left: 11vw;
   }
+  .card .details{
+    bottom: 2vw;
+  }
+  .card .details h2{
+    font-size: 2rem;
+  }
+  
 }
 @media screen and (max-width:768px){
   .box1{
@@ -322,9 +423,48 @@ body{
   .nav > .nav-links > a{
     font-size: 2rem;
   }
+  .card .details h2{
+    font-size: 2.5rem;
+  }
+  .card .details h2 span{
+
+    font-size: 1.5rem;
+  }
+  .card:hover .imgBx
+  {
+    bottom: 120px;
+  }
+  .card .details{
+    bottom:6vw;
+  }
 }
 @media screen and (max-width:600px){
   .intial{
     margin-top: 26vw;
+  }
+  .card:hover .imgBx
+  {
+    bottom: 100px;
+  }
+}
+@media screen and (max-width:479px){
+ 
+  .card:hover .imgBx
+  {
+    bottom: 85px;
+  }
+  .card .details h2{
+    font-size: 1.8rem;
+  }
+  .card .details h2 span{
+
+    font-size: 1.2rem;
+  }
+  .card .details{
+    bottom:4.8vw;
+  }
+  .contact-icons img{
+    height: 3rem;
+    width: 3rem;
   }
 }
