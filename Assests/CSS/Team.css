@@ -33,10 +33,15 @@ body{
 }
 .nav-btn{
   padding-right:5vw;
+  height: 100%;
+  display: flex !important;
+  align-items: center;
 }
 
 .nav > .nav-header {
-  display: inline;
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
 }
 .nav-tabs{
   border: 0px;
@@ -83,7 +88,7 @@ body{
   display: none;
 }
 
-@media (max-width:768px) {
+@media (max-width:1120px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -93,7 +98,7 @@ body{
   .nav > .nav-links {
     padding-right: 3vw;
     text-align: end;
-    top:60px !important;
+    top:6vh !important;
   }
   
   .nav > .nav-btn > label {
@@ -122,10 +127,10 @@ body{
     overflow-y: hidden;
     top: 50px;
     left: 0px;
-    padding-right: 10vw;
+    /* padding-right: 10vw; */
   }
   .nav > .nav-links > a {
-    font-size: 1rem;
+    font-size: 1.6rem;
     display: block;
     width: 100%;
   }
@@ -164,12 +169,12 @@ body{
   flex-direction:row;
 }
 .tedx-image{
-  z-index: -1;
+  z-index: 5;
   position: absolute;
   left:0%;
   padding-left: 5vw;
   padding-top: 0vh;
-  width:35rem;
+  width:28rem;
 }
 .navbar-nav{
   padding-top: 2vh;
@@ -244,6 +249,7 @@ body{
   
   .card:hover .imgBx
   {
+    border: 5px solid #f00;
     bottom: 90px;
   }
   .card:hover .details{
@@ -371,19 +377,48 @@ body{
     padding-top: 2vw;
     font-size: 1.8rem;
   }
-  .fa-brands{
+  .linkedin,.mail,.phone{
+    font-size: 20px !important;
     color:#000;
     border-radius:10%;
+    /* background-color: #fff; */
+    margin-left: 0.5vw;
+    padding: 0.2vw;
+  }
+  .social-icons{
+    color:#000;
+    border-radius:10%;
+    /* background-color: #fff; */
+    margin-left: 0.5vw;
+    padding: 0.2vw;
+    border:2px solid #fff;
     background-color: #fff;
-    margin-left: 1.5vw;
+  }
+
+  .social-icons:hover{
+    color: #fff;
+    border:2px solid #f00;
+    background-color: #f00;
+  }
+  .social{
+    font-size: 20px !important;
+    color:#000;
+    border-radius:10%;
+    border:2px solid #f00;
+    margin-left: 0.5vw;
     padding: 0.2vw;
     border:2px solid #fff;
   }
-  .fa-brands:hover{
-    color: #fff;
-    border:2px solid #e03a3c;
-    background-color: #e03a3c;
+  .social-icons,.fa-envelope-o,.fa-phone{
+    font-size: 20px !important;
   }
+  .mail:hover,.phone:hover,.linkedin:hover{
+    color: #fff;
+    /* border:2px solid #000; */
+    transform: translateY(-2px);
+    background-color: #f00;
+  }
+
   .fa-facebook-f{
     padding:0.2vw 0.4vw;
   }
@@ -417,9 +452,23 @@ body{
   .card .details h2{
     font-size: 2rem;
   }
-  
+  .contact-icons{
+    padding-top: 5px;
+  }
+  .social-icons,.fa-envelope-o,.fa-phone{
+    font-size: 25px !important;
+  }
 }
 @media screen and (max-width:768px){
+  .tedx-image{
+    width:30rem;
+  }
+  .nav-bar{
+    height:10vh;
+  }
+  .nav > .nav-header {
+    align-items: center;
+  }
   .box1{
     flex-wrap: wrap;
     align-content: center;
@@ -453,14 +502,34 @@ body{
   .card .details{
     bottom:6vw;
   }
+  .contact-icons{
+    padding-top: 5px;
+  }
+  .social-icons,.fa-envelope-o,.fa-phone{
+    font-size: 25px !important;
+  }
 }
 @media screen and (max-width:600px){
+  .tedx-image{
+    width:25rem;
+  }
+  .nav-bar{
+    height:9vh;
+  }
   .intial{
     margin-top: 26vw;
   }
   .card:hover .imgBx
   {
     bottom: 100px;
+  }
+}
+@media screen and (max-width:516px){
+  .tedx-image{
+    width:23rem;
+  }
+  .nav-bar{
+    height:8vh;
   }
 }
 @media screen and (max-width:479px){
@@ -482,5 +551,13 @@ body{
   .contact-icons img{
     height: 3rem;
     width: 3rem;
+  }
+}
+@media screen and (max-width:430px){
+  .tedx-image{
+    width:20rem;
+  }
+  .nav-bar{
+    height:7vh;
   }
 }

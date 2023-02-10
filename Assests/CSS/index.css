@@ -56,10 +56,15 @@ body {
 }
 .nav-btn{
   padding-right:5vw;
+  height: 100%;
+  display: flex !important;
+  align-items: center;
 }
 
 .nav > .nav-header {
-  display: inline;
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
 }
 .nav-tabs{
   border: 0px;
@@ -116,7 +121,7 @@ body {
   .nav > .nav-links {
     padding-right: 3vw;
     text-align: end;
-    top:60px !important;
+    top:7vh !important;
   }
   
   .nav > .nav-btn > label {
@@ -145,7 +150,7 @@ body {
     overflow-y: hidden;
     top: 50px;
     left: 0px;
-    padding-right: 10vw;
+    /* padding-right: 10vw; */
   }
   .nav > .nav-links > a {
     font-size: 1rem;
@@ -192,8 +197,8 @@ body {
   left:0%;
   padding-left: 5vw;
   padding-top: 0vh;
-  width:35rem;
-  z-index: -1;
+  width:27rem;
+  z-index: 5;
 }
 .navbar-nav{
   padding-top: 2vh;
@@ -203,7 +208,7 @@ body {
 .background{
   margin-top: 5vw;
   height:90vh;
-  background-image: url(/Assests/img/bg1.jpg);
+  background-image: url(../img/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -873,6 +878,15 @@ footer a:hover {
   }
 }
 @media screen and (max-width:768px){
+  .tedx-image{
+    width:30rem;
+  }
+  .nav-bar{
+    height:10vh;
+  }
+  .nav > .nav-header {
+    align-items: center;
+  }
   #link1,#link2,#link3{
     font-size: 2vw;
   }
@@ -970,6 +984,12 @@ footer a:hover {
   } */
 } 
 @media screen and (max-width:606px){
+  .tedx-image{
+    width:25rem;
+  }
+  .nav-bar{
+    height:9vh;
+  }
   .speaker-images img{
     display: none !important;
   }
@@ -1001,6 +1021,12 @@ footer a:hover {
   }
 }
 @media screen and (max-width:516px){
+  .tedx-image{
+    width:23rem;
+  }
+  .nav-bar{
+    height:8vh;
+  }
   #link1,#link2,#link3{
     font-size: 2vw;
   }
@@ -1022,9 +1048,6 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
   }
-  .tedx-image{
-    top:0px;
-  }
   .box-message .message-box{
     height: 75%;
   }
@@ -1036,6 +1059,15 @@ footer a:hover {
   }
 }
 @media screen and (max-width:430px){
+  .tedx-image{
+    width:20rem;
+  }
+  .nav-bar{
+    height:7vh;
+  }
+  .nav>.nav-links{
+    top:6vh !important
+  }
   .banTitle{
     width:70%;
     font-size: 3.5vw;

@@ -33,8 +33,7 @@
     left:0%;
     padding-left: 5vw;
     padding-top: 0vh;
-    width:25rem;
-    z-index: 5;
+    width:30rem;
   }
   /* navbar css */
   .navbar {
@@ -60,15 +59,10 @@
   }
   .nav-btn{
     padding-right:5vw;
-    height: 100%;
-    display: flex !important;
-    align-items: center;
   }
   
   .nav > .nav-header {
     display: inline;
-    height: 100%;
-  align-items: flex-start;
   }
   .nav-tabs{
     border: 0px;
@@ -287,7 +281,7 @@
       width: 100%;
       position: relative;
   }
-  .carousel .item .img-responsive {	
+  .carousel .item img {	
       top:0px;
       height: 15vw;
       width: 15vw;
@@ -302,12 +296,6 @@
       margin: 10px auto auto auto;
       left: 0;
       right: 0;
-  }
-  .carousel .item .youtube-icon{
-    position: absolute;
-    height: 45px;
-    width:45px;
-    bottom:15px;
   }
   /* .carousel .item img:hover{
     border:4px solid red;
@@ -448,11 +436,10 @@
   
   /* footer CSS */
   footer {
+    position: absolute;
     bottom: 0px;
-    /* position: absolute;
- 
     right: 0px;
-    left: 0px; */
+    left: 0px;
     background: black;
     padding: 30px 0;
     /* color: #111; */
@@ -522,12 +509,6 @@
  
   }
   @media screen and (max-width:768px){
-    .laptop{
-      display: none;
-    }
-    .phone{
-      display: block;
-    }
     .carousel .item img {	
       top:0px;
       height: 40vw;

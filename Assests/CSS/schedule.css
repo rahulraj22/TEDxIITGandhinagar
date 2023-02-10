@@ -36,7 +36,8 @@
     left:0%;
     padding-left: 5vw;
     padding-top: 0vh;
-    width:20rem;
+    width:17rem;
+    z-index: 5;
   }
   /* navbar css */
   .navbar {
@@ -62,10 +63,15 @@
   }
   .nav-btn{
     padding-right:5vw;
+    height: 100%;
+    display: flex !important;
+    align-items: center;
   }
   
   .nav > .nav-header {
-    display: inline;
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
   }
   .nav-tabs{
     border: 0px;
@@ -112,7 +118,7 @@
     display: none;
   }
   
-  @media (max-width:768px) {
+  @media (max-width:1120px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -122,7 +128,7 @@
     .nav > .nav-links {
       padding-right: 3vw;
       text-align: end;
-      top:60px !important;
+      top:7vh !important;
     }
     
     .nav > .nav-btn > label {
@@ -151,7 +157,7 @@
       overflow-y: hidden;
       top: 50px;
       left: 0px;
-      padding-right: 10vw;
+      /* padding-right: 10vw; */
     }
     .nav > .nav-links > a {
       font-size: 1rem;
@@ -885,116 +891,154 @@ footer {
 }
 }
 @media only screen and (max-width:767px) {
-    .main-timeline {
-        padding-top: 50px
-    }
-    .main-timeline .timeline-content{
-        align-items: flex-start;
-        z-index:-1;
-    }
+  .tedx-image{
+    width:18rem;
+  }
+  .nav-bar{
+    height:10vh;
+  }
+  .nav > .nav-header {
+    align-items: center;
+  }
+  .main-timeline {
+      padding-top: 50px
+  }
+  .main-timeline .timeline-content{
+      align-items: flex-start;
+      z-index:-1;
+  }
 
-    .main-timeline:before {
-        left: 80px;
-        right: 0;
-        margin: 0
-    }
+  .main-timeline:before {
+      left: 80px;
+      right: 0;
+      margin: 0
+  }
 
-    .main-timeline .timeline {
-        margin-bottom: 70px
-    }
+  .main-timeline .timeline {
+      margin-bottom: 70px
+  }
 
-    .main-timeline .timeline:before {
-        top: 0;
-        left: 83px;
-        right: 0;
-        margin: 0
-    }
+  .main-timeline .timeline:before {
+      top: 0;
+      left: 83px;
+      right: 0;
+      margin: 0
+  }
 
-    .main-timeline .timeline-icon {
-        width: 60px;
-        height: 60px;
-        line-height: 40px;
-        padding: 5px;
-        top: 0;
-        left: 0
-    }
+  .main-timeline .timeline-icon {
+      width: 60px;
+      height: 60px;
+      line-height: 40px;
+      padding: 5px;
+      top: 0;
+      left: 0
+  }
 
-    .main-timeline .timeline:nth-child(even) .timeline-icon {
-        left: 0;
-        right: auto
-    }
+  .main-timeline .timeline:nth-child(even) .timeline-icon {
+      left: 0;
+      right: auto
+  }
 
-    .main-timeline .timeline-icon:before,
-    .main-timeline .timeline:nth-child(even) .timeline-icon:before {
-        width: 25px;
-        left: auto;
-        right: -25px
-    }
+  .main-timeline .timeline-icon:before,
+  .main-timeline .timeline:nth-child(even) .timeline-icon:before {
+      width: 25px;
+      left: auto;
+      right: -25px
+  }
 
-    .main-timeline .timeline-icon:after,
-    .main-timeline .timeline:nth-child(even) .timeline-icon:after {
-        width: 25px;
-        height: 0px;
-        top: 44px;
-        left: auto;
-        right: -5px
-    }
+  .main-timeline .timeline-icon:after,
+  .main-timeline .timeline:nth-child(even) .timeline-icon:after {
+      width: 25px;
+      height: 0px;
+      top: 44px;
+      left: auto;
+      right: -5px
+  }
 
-    .main-timeline .timeline-icon i {
-        font-size: 30px;
-        line-height: 45px
-    }
+  .main-timeline .timeline-icon i {
+      font-size: 30px;
+      line-height: 45px
+  }
 
-    .main-timeline .timeline-content,
-    .main-timeline .timeline:nth-child(even) .timeline-content {
-        width: 100%;
-        margin-top: -15px;
-        padding-left: 130px;
-        padding-right: 5px
-    }
+  .main-timeline .timeline-content,
+  .main-timeline .timeline:nth-child(even) .timeline-content {
+      width: 100%;
+      margin-top: -15px;
+      padding-left: 130px;
+      padding-right: 5px
+  }
 
-    .main-timeline .timeline:nth-child(even) .timeline-content {
-        float: right
-    }
+  .main-timeline .timeline:nth-child(even) .timeline-content {
+      float: right
+  }
 
-    .main-timeline .timeline-content:before,
-    .main-timeline .timeline:nth-child(even) .timeline-content:before {
-        width: 50%;
-        left: 120px
-    }
+  .main-timeline .timeline-content:before,
+  .main-timeline .timeline:nth-child(even) .timeline-content:before {
+      width: 50%;
+      left: 120px
+  }
 
-    .main-timeline .timeline:nth-child(even) .timeline-content:before {
-        right: auto;
-        transform: rotateY(0)
-    }
+  .main-timeline .timeline:nth-child(even) .timeline-content:before {
+      right: auto;
+      transform: rotateY(0)
+  }
 
-    .main-timeline .timeline-content:after,
-    .main-timeline .timeline:nth-child(even) .timeline-content:after {
-        left: 85px
-    }
-    .fa-icon{
-        margin-right: 3rem;
-        height: 7rem;
-        width:7rem;
-        border:5px solid red;
-    }
-    .description{
-        font-size: 1.5rem !important;
-    }
-    .designation{
-        font-size: 1.3rem !important;
-    }
-    .row{
-        padding-left: 50px;
-    }
-    .timeline-left .designation{
-        text-align: start;
-    }
-    .description{
-        text-align: start !important;
-    }
+  .main-timeline .timeline-content:after,
+  .main-timeline .timeline:nth-child(even) .timeline-content:after {
+      left: 85px
+  }
+  .fa-icon{
+      margin-right: 3rem;
+      height: 7rem;
+      width:7rem;
+      border:5px solid red;
+  }
+  .description{
+      font-size: 1.5rem !important;
+  }
+  .designation{
+      font-size: 1.3rem !important;
+  }
+  .row{
+      padding-left: 50px;
+  }
+  .footer-row{
+    padding-left: 0px;
+  }
+  .timeline-left .designation{
+      text-align: start;
+  }
+  .description{
+      text-align: start !important;
+  }
 }
-
+@media screen and (max-width:606px){
+  .tedx-image{
+    width:16rem;
+  }
+  .nav-bar{
+    height:9vh;
+  }
+}
+@media screen and (max-width:516px){
+  .tedx-image{
+    width:14rem;
+  }
+  .nav-bar{
+    height:8vh;
+  }
+}
+@media screen and (max-width:430px){
+  .tedx-image{
+    width:12rem;
+  }
+  .nav-bar{
+    height:7vh;
+  }
+  .nav>.nav-links{
+    top:6vh !important
+  }
+}
 @media only screen and (max-width:479px) {
 
     .main-timeline .timeline-content,
