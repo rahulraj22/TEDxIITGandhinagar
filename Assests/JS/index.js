@@ -74,15 +74,15 @@ $('.close,.message-box').on('click',function(){
     $('.message-box.first-speaker').css("transform","translate(0,-73vh)");
  
 })
-var list = ['.first','.second','.third','.fourth','.fifth'];
-for(let i=0;i<5;i++){
+var list = ['.first','.second','.third','.fourth','.fifth','.sixth'];
+for(let i=0;i<6;i++){
 
   $(list[i]+'-close,.message-box').on('click',function(){
     $('.nav-bar').css('opacity','1');
     $('section').css('opacity','1');
      setTimeout(function() {
       $('.message-box'+list[i]+'-speaker').css('display','none');
-    }, 1000);
+    }, 100);
     $('.message-box'+list[i]+'-speaker').css("transform","translate(0,-73vh)");
   })
 

@@ -197,7 +197,7 @@ body {
   left:0%;
   padding-left: 5vw;
   padding-top: 0vh;
-  width:27rem;
+  width:37rem;
   z-index: 5;
 }
 .navbar-nav{
@@ -206,6 +206,7 @@ body {
   padding-left: 52.5vw;
 }
 .background{
+  width:100vw;
   margin-top: 5vw;
   height:90vh;
   background-image: url(../img/bg1.jpg);
@@ -213,6 +214,16 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+/* .background{
+  display: flex;
+  justify-content: center;
+} */
+.background img{
+  margin-top: 2vw;
+  height: 100vh;
+  width:100%;
+  object-fit: fill;
 }
 .banTitle{
   position: absolute;
@@ -490,7 +501,7 @@ h2{
   top:16vw;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 1.4vw;
+  font-size: 1.3vw;
   color: #fff;
   margin: 15px 0;
 }
@@ -498,7 +509,7 @@ h2{
   position: absolute;
   top:19vw;
   font-weight: 600;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
 }
 .carousel .item h4 {
     font-size: 18px;
@@ -702,10 +713,19 @@ h2{
 }
 .box-message .message-box .speaker-information p{
   color: #EBFFFB;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   margin: 0px;
   font-family:Montserrat ;
 }
+.box-message .message-box .speaker-information .brands {
+  font-size: 2.5rem;
+  color:#fff;
+  background-color: #0077B5;
+  border:2px solid #0077B5;
+}
+/* .box-message .message-box .speaker-information .brands:hover {
+  font-size: 2.6rem;
+} */
 /* message box CSS complete */
 
 /* sponsers CSS */
@@ -781,7 +801,7 @@ footer a:hover {
 .footer-col {
   flex: 1;
   margin-bottom: 30px;
-  margin: 0 5%;
+  margin: 0 3%;
 }
 .copyright{
   background-color: #000;
@@ -819,7 +839,9 @@ footer a:hover {
   padding:0.2vw 0.4vw;
 }
 /* footer CSS complete */
-
+iframe{
+  margin-top: 2vw;
+}
 
 @media screen and (max-width:1300px){
   .theme-video{
@@ -846,6 +868,9 @@ footer a:hover {
   }
 }
 @media screen and (max-width:991px) {
+  .background img{
+    width:120%;
+  }
   .nav-row{
     width:80%;
   }
@@ -864,6 +889,7 @@ footer a:hover {
   }
   .box-message .message-box .speaker-information p{
     margin-top: 1vw;
+    font-size: 1.5vw;
   }
   .box-message .message-box .speaker-information{
     margin-top: 2vw;
@@ -877,6 +903,7 @@ footer a:hover {
   }
   
   .theme{
+    text-align: center;
     width: 70vw;
     margin: auto;
     padding: 3px 3px 3px 3px;
@@ -890,8 +917,11 @@ footer a:hover {
   }
 }
 @media screen and (max-width:768px){
+  .background img{
+    width:140%;
+  }
   .tedx-image{
-    width:25rem;
+    width:28rem;
   }
   .nav-bar{
     height:10vh;
@@ -921,15 +951,15 @@ footer a:hover {
     width: 40vw;
   }
   .mobile-wrapper{
-    height: 65vw !important;
+    height: 68vw !important;
   }
   .carousel .item h2{
-    font-size: 2.2rem;
+    font-size: 2rem;
     top:40vw;
   }
   .carousel .item p{
     top:47vw;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   h2{
     font-size: 4rem;
@@ -968,6 +998,9 @@ footer a:hover {
     padding-top: 0px;
     margin-top: 0px;
   }
+  .box-message .message-box .speaker-information p{
+    font-size: 1.3rem;
+  }
   .box-message .message-box .speaker-information h2{
     align-self: center;
     margin-top: 0px;
@@ -996,8 +1029,11 @@ footer a:hover {
   } */
 } 
 @media screen and (max-width:606px){
+  .background img{
+    width:160%;
+  }
   .tedx-image{
-    width:23rem;
+    width:26rem;
   }
   .nav-bar{
     height:9vh;
@@ -1026,6 +1062,9 @@ footer a:hover {
   .box-message .message-box .speaker-information h2{
     padding-top: 3vw;
   }
+  .box-message .message-box .speaker-information p{
+    font-size: 1.3rem;
+  }
   .sponsers img{
     width:70vw;
     height: 70vw;
@@ -1033,8 +1072,11 @@ footer a:hover {
   }
 }
 @media screen and (max-width:516px){
+  .background img{
+    width:165%;
+  }
   .tedx-image{
-    width:21rem;
+    width:24rem;
   }
   .nav-bar{
     height:8vh;
@@ -1066,13 +1108,16 @@ footer a:hover {
   .box-message .message-box .speaker-information h2{
     padding-top: 8vw;
   }
+  .box-message .message-box .speaker-information p{
+    font-size: 1.3rem;
+  }
   .carousel .item .youtube-icon{
     top:51vw !important;
   }
 }
 @media screen and (max-width:430px){
   .tedx-image{
-    width:18rem;
+    width:21rem;
   }
   .nav-bar{
     height:7vh;
@@ -1092,7 +1137,7 @@ footer a:hover {
     top: 52vw;
   }
   .box-message .message-box{
-    height: 80%;
+    height: 70%;
   }
   .carousel .item .youtube-icon{
     font-size: 25px !important;
@@ -1101,16 +1146,29 @@ footer a:hover {
     height: 50px !important;
     width: 50px !important;
   }
+  .box-message .message-box .speaker-information p{
+    font-size: 1.4rem;
+  }
 }
 @media screen and (max-width:400px){
   .box-message .message-box{
-    height: 90%;
+    height: 70%;
   }
   .mobile-wrapper{
-    height: 82vw !important;
+    height: 75vw !important;
   }
   .carousel .item .youtube-icon{
     top:60.5vw !important;
-
+  }
+  .box-message .message-box .speaker-information p{
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width:325px){
+  .box-message .message-box{
+    height: 90%;
+  }
+  .box-message .message-box .speaker-information p{
+    font-size: 1.2rem;
   }
 }
