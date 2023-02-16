@@ -1,10 +1,87 @@
-body {
+html{
+    scroll-behavior: smooth;
+  }
+  body {
     overflow-x: hidden;
-    font-family: Raleway,sans-serif !important;
-    padding-bottom: 20px;
-    background-color: #000 !important;
+    background-color: #1c1c1c !important;
+  }
+  #ff-compose{
+    margin: 8rem auto auto auto;
+    width:fit-content;
+    border-radius: 10px;
+  }
+  .ff-section img{
+    border-radius: 10px;
+    padding-bottom: 0px !important;
+  }
+  .container{
+    border:none !important;
+  }
+  .ff-description button{
+    display: none !important;
+  }
+  p,.ff-item-qs, .ff-form-check-label,.ff-success,.ff-description,.ff-section-header {
+    color: #fff;
+  }
+  .ff-title{
+    display: none;
+  }
+  .ff-section-header{
+    font-size: 1.3rem !important;
+    font-family: Raleway,sans-serif;
+  }
+  .ff-success{
+    font-size: 2rem;
+    width: max-content !important;
+    height:10vh !important;
+  }
+  .ff-form{
+    width:fit-content !important;
+  }
+
+  .ff-description{
+    font-family: 'Helvetica';
+  }
+  .ff-description b{
+    font-size: 2rem;
+  }
+  .form-group,.ff-description{
+    padding: 25px 25px !important;
+    margin: 20px auto !important;
+    background-color: #000;
+    border-radius: 10px;
+  }
+  .ff-item-qs{
+    font-family: Raleway,sans-serif;
+    font-weight: 600 !important;
+  } 
+  
+
+  .ff-button-bar img{
+    display: none;
+  }
+  .ff-button-bar button{
+    /* background-color:#f00 !important; */
+    border: none !important;
+    padding: 0.6rem 1.5rem !important;
+  }
+  .ff-button-bar button:hover{
+    background-color:#fff !important;
+    color:#0d6efd;
+  }
+  .ff-button-bar span{
+    font-size: 1rem !important;
+  }
+  .material-icons{
+    display: none !important;
+  }
+  i{
+    font-style: normal !important;
+    font-weight: bolder;
+    font-size: large;
   }
   
+  /* navbar css */
   .navbar {
     /* to make the navbar sticky */
     position: fixed;
@@ -16,24 +93,27 @@ body {
   }
   .nav-bar {
     top:0%;
-    /* margin: 1.5vw ; */
+    margin: 1.5vw 0vw;
     margin-top: 0vw;
-    margin-bottom: 5vw;
     padding-top: 1vw;
-    padding-bottom: 4vw;
     z-index: 100;
     position: fixed !important;
-    height: 10vh;
+    height: 12vh;
     width: 100%;
     background-color: #000;
     position: relative;
   }
   .nav-btn{
     padding-right:5vw;
+    height: 100%;
+    display: flex !important;
+    align-items: center;
   }
   
   .nav > .nav-header {
-    display: inline;
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
   }
   .nav-tabs{
     border: 0px;
@@ -50,8 +130,9 @@ body {
   }
   
   .nav > .nav-links {
+    margin-top: 0.3vw;
     background-color: #000 !important;
-    margin-right: 3vw;
+    margin-right: 5vw;
     position: absolute;
     right: 0%;
     display: inline;
@@ -60,10 +141,15 @@ body {
   }
   
   .nav > .nav-links > a {
+    position: relative;
+    top:-10px;
+    font-size: 1rem;
+    font-family: raleway,sans-serif;
     display: inline-block;
-    padding: 13px 10px 13px 10px;
+    padding: 13px 14px;
     text-decoration: none;
     color: #efefef;
+    font-weight: 600;
   }
   
   .nav > .nav-links > a:hover {
@@ -74,26 +160,7 @@ body {
     display: none;
   }
   
-  /* form CSS */
-  #ff-compose{
-    padding-top: 10vh;
-    color: #eee;
-  }
-  .ff-section{
-    padding: 3vw;
-    border: 3px solid red;
-  }
-  #ff-compose .ff-button-bar img{
-    display: none;
-  }
-  .ff-item-qs{
-    color: red;
-  } 
-  .ff-qs-html-text{
-    color: red;
-  }
-  /* form CSS complete */
-  @media (max-width:768px) {
+  @media (max-width:1120px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -103,7 +170,7 @@ body {
     .nav > .nav-links {
       padding-right: 3vw;
       text-align: end;
-      top:60px !important;
+      top:7vh !important;
     }
     
     .nav > .nav-btn > label {
@@ -132,8 +199,10 @@ body {
       overflow-y: hidden;
       top: 50px;
       left: 0px;
+      /* padding-right: 10vw; */
     }
     .nav > .nav-links > a {
+      font-size: 1rem;
       display: block;
       width: 100%;
     }
@@ -146,57 +215,86 @@ body {
       overflow-y: hiddin;
     }
   }
-  
+  .get-tickets{
+    font-family: Raleway,sans-serif;
+    border:0px !important;
+    color: #fff;
+    background-color: rgb(254, 42, 6);
+    font-weight: 600;
+    padding: 0.5vw 1.5vw;
+    border-radius: 10px;
+  }
+  .get-tickets:hover{
+    background-color: #181818;
+  }
   .collapse {
     padding-left: 18px;
   }
-  .container{
-    display: flex;
-    flex-direction:row;
+  
+  .nav > .nav-links > a:hover {
+    color: red;
   }
-  .section-item{
-    font-size: 1rem;
-  }
-  .section-item:hover {
-    border-bottom: 1px solid red;
-  }
-  .nav-tabs .nav-item {
-    border-bottom:0px !important;
-    margin-bottom: -1px;
-  }
+  
+  /* navbar css complete */
   .tedx-image{
     position: absolute;
     left:0%;
     padding-left: 5vw;
     padding-top: 0vh;
-    width:20rem;
+    width:24rem;
+    z-index: 5;
   }
-  .navbar-nav{
-    padding-top: 2vh;
-  /*   padding-left: 4.5vw; */
-    padding-left: 52.5vw;
-  }
-  
+
+
   @media screen and (max-width:991px) {
     .nav-row{
       width:80%;
     }
+    .tedx-image{
+        width:22rem;
+      }
   }
   @media screen and (max-width:768px){
-
-  } 
-  @media screen and (max-width:600px){
-
-  }
-  @media screen and (max-width:505px){
-    .nav{
-      flex-direction: column;
+    .tedx-image{
+      width:20rem;
+    }
+    .nav-bar{
+      height:10vh;
+    }
+    .nav > .nav-header {
       align-items: center;
     }
+    .nav>.nav-links{
+      padding-right: 5vw !important;
+    }
+    .nav > .nav-links > a{
+      font-size: 1.3rem;
+    }
+  } 
+  @media screen and (max-width:606px){
     .tedx-image{
-      top:0px;
+      width:19rem;
+    }
+    .nav-bar{
+      height:9vh;
     }
   }
-  @media screen and (max-width:390px){
-    
+  @media screen and (max-width:516px){
+    .tedx-image{
+      width:18rem;
+    }
+    .nav-bar{
+      height:8vh;
+    }
+  }
+  @media screen and (max-width:430px){
+    .tedx-image{
+      width:16rem;
+    }
+    .nav-bar{
+      height:7vh;
+    }
+    .nav>.nav-links{
+      top:6vh !important
+    }
   }
